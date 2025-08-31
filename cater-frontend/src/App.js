@@ -14,12 +14,15 @@ import AdminAudit from './pages/admin/AdminAudit';
 import Login from './pages/Login';
 import Unauthorized from './pages/Unauthorized';
 import ClientDetails from "./pages/admin/ClientDetails";
+import LandingPage from './caterxperience/LandingPage';
 
 export default function App(){
   return(
     <Router>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/landing" element={<LandingPage />} />
+        <Route path="/caterxperience" element={<LandingPage />} />
         <Route path="/unauthorized" element={<Unauthorized />} />
 
         {/* ADMIN ONLY */}
